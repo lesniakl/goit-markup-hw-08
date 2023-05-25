@@ -1,0 +1,60 @@
+.product {
+  @extend .grid__item;
+  gap: 0px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(33, 150, 243, 0.9);
+    font-size: 1.125rem;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    padding: 3.06rem 1.5rem;
+    overflow: auto;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+  }
+
+  &__textbox {
+    @extend .grid__textbox;
+    position: relative;
+    gap: 4px;
+    flex-grow: 1;
+    padding: 20px 24px;
+    background-color: #fff;
+  }
+
+  &__h3 {
+    background-color: #fff;
+    font-size: 1.125rem;
+    line-height: 2;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+  }
+
+  &__p {
+    background-color: #fff;
+    font-size: 1rem;
+    line-height: 1.88;
+    color: $second-font-color;
+    letter-spacing: 0.03em;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:focus .product__overlay,
+  &:hover .product__overlay {
+    transform: translateY(0);
+  }
+}

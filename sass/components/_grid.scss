@@ -1,0 +1,22 @@
+.grid {
+  display: flex;
+  gap: 1.875rem;
+  list-style-type: none;
+
+  &__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 1.875rem;
+  }
+
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+}

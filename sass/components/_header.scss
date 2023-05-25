@@ -1,0 +1,38 @@
+.header {
+  background-color: $bg-color-main;
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+  }
+
+  &__logo {
+    flex: 1 1 auto;
+  }
+
+  &__nav {
+    flex: 3 1 auto;
+  }
+
+  &__contact-list {
+    flex: 1 1 auto;
+    display: inline-flex;
+    justify-content: flex-end;
+    gap: 30px;
+    list-style: none;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    line-height: 115%;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}

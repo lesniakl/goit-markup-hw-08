@@ -1,0 +1,15 @@
+.skills {
+  @extend .grid__item;
+
+  &__img-desc {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2em 0;
+    color: #fff;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

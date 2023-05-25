@@ -1,0 +1,25 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: $font-color;
+}
+h1,
+h2,
+h3,
+p,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.h3 {
+  font-size: 0.875rem;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  &--white {
+    color: #fff;
+  }
+}

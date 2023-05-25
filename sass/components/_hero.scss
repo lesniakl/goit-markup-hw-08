@@ -1,0 +1,21 @@
+.hero {
+  background-color: $bg-color-accent2;
+  background-image: url("../images/overlay.png"),
+    url("../images/background-img.jpg");
+  background-position: 50% 50%, 50% 50%;
+  background-size: 1600px 100%, 1600px 100%;
+  background-repeat: no-repeat, no-repeat;
+  max-width: 100%;
+  gap: 30px;
+  padding: 200px;
+
+  &__title {
+    font-size: 2.75rem;
+    line-height: 1.36;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    color: #fff;
+    text-align: center;
+    max-width: 25ch;
+  }
+}
