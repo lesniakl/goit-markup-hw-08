@@ -13,3 +13,14 @@
     background: rgba(47, 48, 58, 0.8);
   }
 }
+
+.skills-subsection {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 44px;
+  }
+}

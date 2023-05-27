@@ -1,7 +1,7 @@
 .navigation {
   display: inline-flex;
   justify-content: space-between;
-  gap: 46px;
+  gap: 60px;
   list-style: none;
 
   &__link {
@@ -27,5 +27,9 @@
         pointer-events: none;
       }
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 46px;
   }
 }

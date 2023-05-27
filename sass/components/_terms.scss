@@ -8,10 +8,15 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.71em;
+  font-size: 0.75rem;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 0.875rem;
+    line-height: 1.71em;
+  }
 
   &__checkbox-control {
     position: relative;
@@ -35,7 +40,7 @@
 
   &__checkbox-label {
     position: relative;
-    width: 100%;
+    width: 16px;
     background-color: #fff;
     border: 2px solid $font-color;
     border-radius: 2px;
@@ -59,5 +64,12 @@
   &__link {
     color: $active-element;
     text-decoration: underline;
+    font-size: 0.75rem;
+    line-height: 1.167;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 0.875rem;
+      line-height: 171%;
+    }
   }
 }

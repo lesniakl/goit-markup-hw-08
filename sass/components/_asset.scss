@@ -2,9 +2,11 @@
   @extend .grid__item;
 
   &__icon-bg {
+    display: flex;
+    justify-content: center;
     background: #f5f4fa;
     border-radius: 4px;
-    padding: 25px 100px;
+    padding: 25px 0;
   }
 
   &__icon {
@@ -12,17 +14,18 @@
     height: 70px;
   }
 
-  &__desc {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
   &__p {
     font-size: 0.875rem;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $second-font-color;
-    max-width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
